@@ -1,6 +1,6 @@
 export function Item({ item, onToggleItem, onDeleteItem }) {
   return (
-    <div className="space-x-4 m-2">
+    <div className="space-x-4 m-2 text-white">
       <input
         type="checkbox"
         value={item.packed}
