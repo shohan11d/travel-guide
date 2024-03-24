@@ -22,6 +22,9 @@ function App() {
     setItems((items) => items.filter((item) => item.id !== id));
   }
 
+  function handleClearList(id) {
+    setItems(() => []);
+  }
   return (
     <div>
       <Logo />
@@ -30,6 +33,7 @@ function App() {
         items={items}
         onToggleItem={handleToggleItem}
         onDeleteItem={handleDeleteItem}
+        onClearList = {handleClearList}
       />
       <Stats items={items} />
     </div>
