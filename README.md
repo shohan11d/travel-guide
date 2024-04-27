@@ -4,8 +4,8 @@ An app that helps pack items and makes sure you don't forget anything on your jo
 
 ## Installation 
 ```
-git clone "repo name"
-cd repo
+git clone "https://github.com/shohan11d/travel-guide.git"
+cd travel-guide
 npm i
 npm run start 
 ```
