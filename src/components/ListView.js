@@ -23,7 +23,7 @@ function ListView({ items, setItems, onToggle, onDelete }) {
   if (sorted === "status") console.log("sort by status:", sortedItems);
   return (
     <>
-      <div className="bg-blue-400 px-12 py-10 grid grid-cols-4 justify-items-center">
+      <div className="bg-neutral-700 font-bold text-white px-12 py-10 grid grid-cols-4 justify-items-center">
         {sortedItems &&
           sortedItems.map((item) => (
             <ItemRender
@@ -35,8 +35,8 @@ function ListView({ items, setItems, onToggle, onDelete }) {
             />
           ))}
       </div>
-      <div className="bg-blue-400 text-center">
-        <select value={sorted} onChange={(e) => setSorted(e.target.value)}>
+      <div className="bg-neutral-700  text-center">
+        <select  className="p-1 rounded-sm font-bold" value={sorted} onChange={(e) => setSorted(e.target.value)}>
           <option value="input">Sort by input</option>
           <option value="description">Sort by description</option>
           <option value="status">Sort by packed status</option>

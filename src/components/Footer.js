@@ -7,19 +7,19 @@ function Footer({ items }) {
 
   if (total === 0)
     return (
-      <div className="bg-green-400 p-5 text-center">
+      <div className="bg-neutral-800 font-bold text-white p-5 text-center">
         <p>Please Start packing </p>
       </div>
     );
   if (total === packed)
     return (
-      <div className="bg-green-400 p-5 text-center">
+      <div className="bg-neutral-800 font-bold text-white p-5 text-center">
         <p>ALl items packed successfully</p>
       </div>
     );
   if (total === packed) return;
   return (
-    <div className="bg-green-400 p-5 text-center">
+    <div className="bg-neutral-800 font-bold text-white p-5 text-center">
       <p>Packing Done: {percentage}% </p>
     </div>
   );
