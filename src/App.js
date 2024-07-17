@@ -14,6 +14,7 @@ function App() {
 
   function handleSubmit(item) {
     setItems(() => [...items, item]);
+
   }
 
   function handleToggle(item) {

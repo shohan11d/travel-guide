@@ -7,6 +7,9 @@ function Form({ onSubmit }) {
   function handleNewItem(e) {
     e.preventDefault();
 
+    setQuantity(1);
+    setDescription("");
+
     if (!description) return;
     const newItem = {
       id: crypto.randomUUID(),
@@ -41,7 +44,7 @@ function Form({ onSubmit }) {
         type="text"
         placeholder="item"
         class=""
-        className="px-5 py-2 rounded-full placeholder-blue-800 font-bold text-black"
+        className="px-5 py-2 rounded-full placeholder-blue-200 font-bold text-black"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />

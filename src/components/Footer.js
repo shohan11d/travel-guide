@@ -2,7 +2,7 @@ function Footer({ items }) {
   const total = items.length;
   const packed = items.filter((item) => item.packed === true).length;
   const unpacked = total - packed;
-  const percentage = (packed / total) * 100;
+  const percentage = ((packed / total) * 100).toFixed(2);
   // console.log("total:", total, "packed:", packed, "percentage:", percentage);
 
   if (total === 0)
