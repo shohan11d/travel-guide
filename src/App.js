@@ -23,12 +23,21 @@ function App() {
       )
     );
   }
+
+  function handleDelete(item) {
+    setItems((items) => items.filter((iteme) => item.id !== iteme.id));
+  }
   return (
     <>
       <Logo />
       <Form onSubmit={handleSubmit} />
-      <ListView items={items} onToggle={handleToggle} setItems={setItems} />
-      <Footer />
+      <ListView
+        items={items}
+        onDelete={handleDelete}
+        onToggle={handleToggle}
+        setItems={setItems}
+      />
+      <Footer items={items} />
     </>
   );
 }
